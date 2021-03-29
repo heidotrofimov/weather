@@ -18,7 +18,7 @@ IDs=['1']
 for date in dates:
     for var in variables:
         for AOI in AOIs:
-            name=date.strftime('%Y%m/%d')+"_"+var+"_"+IDs[AOIs.index(AOI)]+'.nc'
+            name=date.strftime('%Y%m%d')+"_"+var+"_"+IDs[AOIs.index(AOI)]+'.nc'
             c.retrieve(
                 'reanalysis-era5-single-levels',
                 {
