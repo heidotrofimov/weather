@@ -9,7 +9,8 @@ enddate="2021-03-24"
 begin_dateobj=datetime(int(begindate.split("-")[0]),int(begindate.split("-")[1]),int(begindate.split("-")[2]))
 end_dateobj=datetime(int(enddate.split("-")[0]),int(enddate.split("-")[1]),int(enddate.split("-")[2]))
 
-dates=[begin_dateobj + timedelta(days=x) for x in range((end_dateobj-begin_dateobj)).days)]
+dates=[begin_dateobj + timedelta(days=x) for x in range((end_dateobj-begin_dateobj).days)]
+
 variables=['2m_dewpoint_temperature', '2m_temperature', 'soil_temperature_level_1','total_precipitation', 'volumetric_soil_water_layer_1',]
 AOIs=[[58.29, 26.48, 58.27,26.5]]
 IDs=['1']
