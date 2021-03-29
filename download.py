@@ -8,7 +8,7 @@ c.retrieve(
         'format': 'netcdf',
         'variable': '2m_dewpoint_temperature',
         'year': '2021',
-        'month': '01',
+        'month': '03',
         'day': '01',
         'time': '00:00',
     },
