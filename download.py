@@ -24,7 +24,7 @@ for date in dates:
                 {
                     'product_type': 'reanalysis',
                     'format': 'netcdf',
-                    'year': str(date.year)
+                    'year': str(date.year),
                     'month': str(date.month),
                     'variable': var,
                     'day': str(date.day),
